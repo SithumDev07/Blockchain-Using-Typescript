@@ -1,14 +1,16 @@
-interface Hooman {
-    name: string;
-    age: number;
-    gender?: string
+class Hooman {
+    public name: string;
+    public age: number;
+    public gender: string;
+
+    constructor(name: string, age: number, gender: string) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
 }
 
-const person = {
-    name: "Sithum",
-    age: 22,
-    gender: "male"
-}
+const person = new Hooman("Sithum", 22, "male");
 
 const sayHi = (person: Hooman): string => {
     return `Hello ${person.name}, you have lived ${person.age} years. and you are a ${person.gender}.`;
