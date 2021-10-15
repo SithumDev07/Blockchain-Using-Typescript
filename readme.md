@@ -79,3 +79,9 @@ inside package.json
 
     const person = new Hooman("Sithum", 22, "male");
 
+## Array of types
+
+    const genesisBlock: Block = new Block(0, "15453456453454", "", "Hello Genie", 123456);
+
+    let blockChain: [Block] = [genesisBlock];
+

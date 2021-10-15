@@ -11,6 +11,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "crypto-js": "^4.1.1",
     "tsc-watch": "^4.5.0"
   }
 }
