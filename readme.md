@@ -29,3 +29,19 @@ inside package.json
         "prestart": "tsc"
     },
 
+## Optional Parameteres
+
+    const sayHi = (name, age, gender?) => {
+        console.log(`Hello ${name}, you have lived ${age} years. and you are a ${gender}.`);
+    }
+
+    sayHi(name, age, gender);
+
+## Specific Types
+
+    const sayHi = (name: string, age: number, gender?: string) => {
+        console.log(`Hello ${name}, you have lived ${age} years. and you are a ${gender}.`);
+    }
+
+    sayHi(name, age, gender);
+
